@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="个人资产数据库DataSet6" targetNamespace="http://tempuri.org/个人资产数据库DataSet6.xsd" xmlns:mstns="http://tempuri.org/个人资产数据库DataSet6.xsd" xmlns="http://tempuri.org/个人资产数据库DataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="个人资产数据库ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="个人资产数据库ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.个人财产管理系统.Properties.Settings.GlobalReference.Default.个人资产数据库ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="资产表TableAdapter" GeneratorDataComponentClassName="资产表TableAdapter" Name="资产表" UserDataComponentName="资产表TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="个人资产数据库ConnectionString1 (Settings)" DbObjectName="个人资产数据库.dbo.资产表" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 资产类型, money FROM dbo.资产表</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="资产类型" DataSetColumn="资产类型" />
+              <Mapping SourceColumn="money" DataSetColumn="money" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="个人资产数据库DataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="个人资产数据库DataSet6" msprop:Generator_UserDSName="个人资产数据库DataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="资产表" msprop:Generator_TableClassName="资产表DataTable" msprop:Generator_TableVarName="table资产表" msprop:Generator_TablePropName="资产表" msprop:Generator_RowDeletingName="资产表RowDeleting" msprop:Generator_RowChangingName="资产表RowChanging" msprop:Generator_RowEvHandlerName="资产表RowChangeEventHandler" msprop:Generator_RowDeletedName="资产表RowDeleted" msprop:Generator_UserTableName="资产表" msprop:Generator_RowChangedName="资产表RowChanged" msprop:Generator_RowEvArgName="资产表RowChangeEvent" msprop:Generator_RowClassName="资产表Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="资产类型" msprop:Generator_ColumnVarNameInTable="column资产类型" msprop:Generator_ColumnPropNameInRow="资产类型" msprop:Generator_ColumnPropNameInTable="资产类型Column" msprop:Generator_UserColumnName="资产类型">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="money" msprop:Generator_ColumnVarNameInTable="columnmoney" msprop:Generator_ColumnPropNameInRow="money" msprop:Generator_ColumnPropNameInTable="moneyColumn" msprop:Generator_UserColumnName="money" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
